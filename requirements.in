@@ -1,6 +1,7 @@
 gradio
 langchain
 langchain-openai
+langchain-groq
 openai
 langgraph
 yfinance
