@@ -440,10 +440,22 @@ demo = gr.ChatInterface(
 print("🚀 FinAdvise is ready!")
 
 if __name__ == "__main__":
-    # Render sets the PORT environment variable
+    import os
+    
+    # Render automatically sets PORT environment variable
     port = int(os.getenv("PORT", 7860))
+    
+    # Debug: Print what port we're using
+    print(f"\n{'='*60}")
+    print(f"Environment PORT: {os.getenv('PORT', 'NOT SET (using default 7860)')}")
+    print(f"Binding to: 0.0.0.0:{port}")
+    print(f"{'='*60}\n")
+    
+    # Launch with explicit settings for Render
     demo.launch(
-        server_name="0.0.0.0",  # Listen on all network interfaces
+        server_name="0.0.0.0",
         server_port=port,
-        share=False  # Don't create Gradio share link on Render
+        share=False,
+        show_error=True,
+        quiet=False  # Show all startup info
     )
