@@ -2,6 +2,11 @@
 
 An intelligent financial advisor chatbot built with **LangGraph**, **LangChain**, and **OpenAI GPT** that helps users manage their finances, track expenses, analyze stocks, and receive personalized financial advice.
 
+<img width="997" height="581" alt="Screenshot 2025-11-17 004311" src="https://github.com/user-attachments/assets/e9d30e23-efe1-4cb0-b197-4bc111ac18ff" />
+
+
+## LangSMith https://smith.langchain.com
+
 ## 🎯 Purpose
 
 FinAdvise is designed to democratize financial literacy by providing:
